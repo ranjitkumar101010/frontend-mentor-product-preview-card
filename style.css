@@ -1,0 +1,154 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  body {
+    background-color: #f3eae3;
+    font-family: "Montserrat", serif;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    background-color: white;
+    width: 600px;
+    display: flex;
+    border-radius: 10px;
+  }
+
+  .product-image {
+    width: 50%;
+    background-image: url("images/image-product-desktop.jpg");
+    background-size: cover;
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  .product-content {
+    width: 60%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .product-category {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 4px;
+    color: #686a77;
+  }
+
+  .product-details {
+    width: 100%;
+  }
+
+  .product-content h1 {
+    font-family: "Fraunces", serif;
+    font-size: 36px;
+    line-height: 2.6rem;
+    margin-bottom: 20px;
+  }
+
+  .product-content p {
+    font-size: 16px;
+    color: #686a77;
+    line-height: 1.5em;
+  }
+
+  .product-price {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .sale-price {
+    font-family: "Fraunces", serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #3d8168;
+  }
+
+  .actual-price {
+    font-size: 14px;
+    color: #686a77;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3d8168;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+  }
+
+  .btn:hover {
+    background-color: #194131;
+  }
+
+  .btn img {
+    width: 14px;
+    height: 15px;
+  }
+
+  .btn span {
+    color: white;
+    font-weight: 600;
+  }
+
+  footer {
+    padding: 10px;
+    background-color: white;
+  }
+
+  @media screen and (max-width: 375px) {
+    .wrapper {
+      height: auto;
+    }
+
+    .container {
+      flex-direction: column;
+      padding: 10px;
+    }
+
+    .product-image {
+      background-image: url("images/image-product-mobile.jpg");
+      width: 100%;
+      height: 260px;
+      border-radius: 10px;
+    }
+
+    .product-content {
+      width: 100%;
+      padding: 30px 10px;
+      gap: 20px;
+    }
+
+    .product-category {
+      font-size: 12px;
+    }
+
+    .product-content h1 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+  }
